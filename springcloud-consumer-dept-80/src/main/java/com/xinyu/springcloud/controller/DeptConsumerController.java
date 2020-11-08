@@ -21,10 +21,12 @@ public class DeptConsumerController {
     private RestTemplate restTemplate;//提供多种便捷访问远程http服务的方法，简单的restful服务模板
 
     //http://localhost:8001/dept/get/{deptNo}
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    //通过Ribbon实现客户端负载均衡时候要写成id
+    // Ribbon整合Eureka之后就不用写域名+端口号了，直接写id就好了（Application）
+    private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
 
-
-    @RequestMapping(value = "/consumer/dept/add",method = RequestMethod.POST)
+    @RequestMapping(value = "/consumer/dept/add", method = RequestMethod.POST)
     public boolean addDept(@RequestBody Dept dept) {
         return restTemplate.postForObject(REST_URL_PREFIX + "/dept/add", dept, boolean.class);
     }

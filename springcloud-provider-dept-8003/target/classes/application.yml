@@ -24,6 +24,6 @@ eureka:
 
 #info配置
 info:
-  app.name: xinyu_springcloud
-  company.name: www.jiquvr.com.cn
-  author: ZhangXinYu
+  app.name: xinyu_springcloud3
+  company.name: www.jiquvr.com.cn3
+  author: ZhangXinYu3

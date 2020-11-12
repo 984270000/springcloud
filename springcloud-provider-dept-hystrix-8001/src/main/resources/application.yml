@@ -1,5 +1,5 @@
 server:
-  port: 8002
+  port: 8001
 mybatis:
   type-aliases-package: com.xinyu.springcloud.pojo
   config-location: classpath:mybatis/mybatis-config.xml
@@ -10,7 +10,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource #数据源
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db02?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/db01?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&allowMultiQueries=true&useSSL=false
     username: root
     password: root
 
@@ -20,11 +20,11 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    instance-id: springcloud-provider-dept8002 #修改eureka上的默认描述信息
-    prefer-ip-address: false
+    instance-id: springcloud-provider-hystrix-dept8001 #修改eureka上的默认描述信息
+    prefer-ip-address: true #false隐藏ip（显示主机名） true显示ip（隐藏主机名）
 
 #info配置
 info:
-  app.name: xinyu_springcloud2
-  company.name: www.jiquvr.com.cn2
-  author: ZhangXinYu2
+  app.name: xinyu_springcloud1_hystrix
+  company.name: www.jiquvr.com.cn1
+  author: ZhangXinYu1

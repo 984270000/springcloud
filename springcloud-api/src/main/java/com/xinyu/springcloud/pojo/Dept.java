@@ -20,13 +20,12 @@ public class Dept implements Serializable {
 
     private String dName;
 
+    //这个数据库是在哪个数据库的字段 微服务架构一个服务可以对应一个数据库，同一个信息可能存在不同的数据库
+    private String db_source;
+
     public Dept(){}
 
-    public String getdName() {
-        return dName;
-    }
-
-    public void setdName(String dName) {
+    public Dept(String dName) {
         this.dName = dName;
     }
 
@@ -34,24 +33,27 @@ public class Dept implements Serializable {
         return deptNo;
     }
 
-    public void setDeptNo(long deptNo) {
+    public Dept setDeptNo(long deptNo) {
         this.deptNo = deptNo;
+        return this;
+    }
+
+    public String getdName() {
+        return dName;
+    }
+
+    public Dept setdName(String dName) {
+        this.dName = dName;
+        return this;
     }
 
     public String getDb_source() {
         return db_source;
     }
 
-    public void setDb_source(String db_source) {
+    public Dept setDb_source(String db_source) {
         this.db_source = db_source;
-    }
-
-    //这个数据库是在哪个数据库的字段 微服务架构一个服务可以对应一个数据库，同一个信息可能存在不同的数据库
-    private String db_source;
-
-
-    public Dept(String dName) {
-        this.dName = dName;
+        return this;
     }
 
     /**

@@ -1,0 +1,30 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: springcloud-zuul #geteway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+  instance:
+    instance-id: zuul9527.com
+    prefer-ip-address: true #隐藏真实ip
+
+#zuul
+zuul:
+  routes:
+    mydept.serviceId: springcloud-provider-dept
+    mydept.path: /mydept/**
+  #忽略原路径不可访问 直接写名称是忽略单个 springcloud-provider-dept    “*”是全部都不能访问
+#  ignored-services: springcloud-provider-dept
+  ignored-services: "*"
+#  prefix: /xinyu #设置公共 访问前缀 所有要访问的都必须加/xinyu+路径
+
+
+#info配置
+info:
+  app.name: xinyu_springcloud_zuul
+  company.name: www.jiquvr.com.cn_zuul
+  author: ZhangXinYu_zuul

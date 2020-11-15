@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-provider-dept-8001" />
+        <module name="springcloud-config-client-3355" />
         <module name="springcloud-provider-dept-8002" />
         <module name="springcloud-consumer-dept-feign" />
         <module name="springcloud-consumer-dept-80" />
@@ -25,6 +26,7 @@
     <bytecodeTargetLevel>
       <module name="springcloud" target="1.8" />
       <module name="springcloud-api" target="1.8" />
+      <module name="springcloud-config-client-3355" target="1.8" />
       <module name="springcloud-config-server-3344" target="1.8" />
       <module name="springcloud-consumer-dept-80" target="1.8" />
       <module name="springcloud-consumer-dept-feign" target="1.8" />
@@ -43,6 +45,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springcloud" options="" />
       <module name="springcloud-api" options="-parameters" />
+      <module name="springcloud-config-client-3355" options="-parameters" />
       <module name="springcloud-config-server-3344" options="-parameters" />
       <module name="springcloud-consumer-dept-80" options="-parameters" />
       <module name="springcloud-consumer-dept-feign" options="-parameters" />

@@ -19,6 +19,7 @@
         <module>springcloud-consumer-hystrix-dashboard</module>
         <module>springcloud-zuul-9527</module>
         <module>springcloud-config-server-3344</module>
+        <module>springcloud-config-client-3355</module>
     </modules>
     <name>springcloud</name>
     <description>我的第一个springcloud项目</description>

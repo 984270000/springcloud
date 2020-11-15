@@ -9,21 +9,23 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-provider-dept-8001" />
         <module name="springcloud-provider-dept-8002" />
-        <module name="springcloud-api" />
         <module name="springcloud-consumer-dept-feign" />
         <module name="springcloud-consumer-dept-80" />
         <module name="springcloud-provider-dept-8003" />
         <module name="springcloud-zuul-9527" />
         <module name="springcloud-eureka-7003" />
         <module name="springcloud-eureka-7002" />
-        <module name="springcloud-consumer-hystrix-dashboard" />
         <module name="springcloud-eureka-7001" />
         <module name="springcloud-provider-dept-hystrix-8001" />
+        <module name="springcloud-api" />
+        <module name="springcloud-consumer-hystrix-dashboard" />
+        <module name="springcloud-config-server-3344" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springcloud" target="1.8" />
       <module name="springcloud-api" target="1.8" />
+      <module name="springcloud-config-server-3344" target="1.8" />
       <module name="springcloud-consumer-dept-80" target="1.8" />
       <module name="springcloud-consumer-dept-feign" target="1.8" />
       <module name="springcloud-consumer-hystrix-dashboard" target="1.8" />
@@ -41,6 +43,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springcloud" options="" />
       <module name="springcloud-api" options="-parameters" />
+      <module name="springcloud-config-server-3344" options="-parameters" />
       <module name="springcloud-consumer-dept-80" options="-parameters" />
       <module name="springcloud-consumer-dept-feign" options="-parameters" />
       <module name="springcloud-consumer-hystrix-dashboard" options="-parameters" />

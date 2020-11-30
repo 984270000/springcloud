@@ -20,6 +20,7 @@ zuul:
   #忽略原路径不可访问 直接写名称是忽略单个 springcloud-provider-dept    “*”是全部都不能访问
 #  ignored-services: springcloud-provider-dept
   ignored-services: "*"
+#  prefix: /xinyu #设置公共 访问前缀 所有要访问的都必须加/xinyu+路径
 
 
 #info配置

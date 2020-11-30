@@ -1,29 +1,32 @@
-server:
-  port: 8001
-mybatis:
-  type-aliases-package: com.xinyu.springcloud.pojo
-  config-location: classpath:mybatis/mybatis-config.xml
-  mapper-locations: classpath:mybatis/mapper/*.xml
+#server:
+#  port: 8001
+#mybatis:
+#  type-aliases-package: com.xinyu.springcloud.pojo
+#  config-location: classpath:mybatis/mybatis-config.xml
+#  mapper-locations: classpath:mybatis/mapper/*.xml
+#spring:
+#  application:
+#    name: springcloud-provider-dept
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource #数据源
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/db01?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&allowMultiQueries=true&useSSL=false
+#    username: root
+#    password: root
+#
+##eureka的配置 服务注册到哪！
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+#  instance:
+#    instance-id: springcloud-provider-dept8001 #修改eureka上的默认描述信息
+#
+##info配置
+#info:
+#  app.name: xinyu_springcloud1
+#  company.name: www.jiquvr.com.cn1
+#  author: ZhangXinYu1
 spring:
   application:
     name: springcloud-provider-dept
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource #数据源
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db01?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&allowMultiQueries=true&useSSL=false
-    username: root
-    password: root
-
-#eureka的配置 服务注册到哪！
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
-  instance:
-    instance-id: springcloud-provider-dept8001 #修改eureka上的默认描述信息
-
-#info配置
-info:
-  app.name: xinyu_springcloud1
-  company.name: www.jiquvr.com.cn1
-  author: ZhangXinYu1

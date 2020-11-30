@@ -4,5 +4,5 @@ spring:
     config:
       uri: http://localhost:3344
       name: config-client #需要从git上读取的资源名称，不要后缀
-      profile: test
-      label: master
+      profile: dev #需要加载的生产环境
+      label: master #文件所在的分支
